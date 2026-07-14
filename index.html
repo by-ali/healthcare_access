@@ -1,0 +1,175 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.25.0/mapbox-gl.css" rel="stylesheet"/>
+    <link href="./index-D_KIGpyD.css?v=5" rel="stylesheet"/><title>The Long Road to a Doctor</title>
+    <meta content="In Belarus, 428,000 people live in settlements located more than an hour’s walk from the nearest medical facility." name="description"/>
+</head>
+<body>
+    <main>
+        <article>
+            <section class="hero"><div aria-hidden="true" class="map-preview map-preview--cover">
+                <img class="hero-cover-image" src="./hero-hexagons.png" alt="" />
+            </div>
+            <header class="title-card">
+                <h1>The Long Road to a Doctor</h1>
+                <p class="dek">In Belarus, 428,000 people live in settlements located more than an hour’s walk from the nearest medical facility.</p>
+                <p class="byline">By Alina Y.</p></header></section><section class="prose">
+                    <p>In northern Belarus, among the hills, forests and lakes of Ushachy District in the Vitebsk Region, lies the agrotown of Velikiye Doltsy. An agrotown is a Belarusian category of rural settlement intended to provide basic services to surrounding villages. According to the 2019 census, about 350 people lived here at the time.</p>
+                    <p>In the autumn of 2025, the local nursing-care hospital closed.</p>
+                    <p>
+                        <span class="opening-quote">“What are people supposed to do now?”</span> one participant wrote in a social media discussion. She complained that feldsher-midwife stations and outpatient clinics were closing in nearby villages, while the district center did not have enough doctors even for its own residents.</p>
+                        <p>According to our calculations, the nearest feldsher-midwife station, or FAP — a basic rural health post — is now about eight kilometers away. The central district hospital in Ushachy is 16.5 kilometers away.</p>
+                        <p>The closure of the hospital in Velikiye Doltsy came amid a broader reduction in the country’s network of medical facilities.</p>
+                        <p>On April 25, 2026, during a visit to Petrykaw District, Alexander Lukashenko called for a review of whether the existing structure of rural healthcare was justified.</p>
+                        <p>
+                            <span class="opening-quote">“We need to look into this so that we are not wasting money,” he said. “I am not calling for FAPs or local hospitals to be shut down. But we need to look at where they are actually needed.”</span>
+                        </p>
+                        <p>For residents, the question is more immediate: How long does it now take to reach medical care?</p>
+                    </section>
+                    <section aria-label="Map story" class="scrolly">
+                        <div class="sticky-map">
+                            <div class="real-map" id="map"></div>
+                            <div class="map-status" id="map-status" role="status">Loading the interactive map…</div><noscript>JavaScript is required to display the interactive map.</noscript>
+                        </div>
+                        <div class="steps">
+                            <div class="step-card" data-map-state="base">
+                                <p>To assess this, we calculated <mark>the walking route</mark> from every settlement to the nearest medical facility.</p>
+                                <p>We followed the logic of AccessMod, a tool developed with the involvement of the World Health Organization that measures physical access to healthcare based on distance and travel time.</p>
+                                <p>We chose <mark>one hour on foot</mark> as our analytical threshold.</p>
+                            </div>
+                            <div class="step-card" data-map-state="over60min">
+                                <p>Based on the data used in our analysis, the settlements included were home to a total of about 9.2 million people.</p>
+                                <p>According to our calculations, <mark class="teal-highlight">428,130</mark> of them — 4.63% — lived <mark class="teal-highlight">more than an hour’s walk</mark> from the nearest medical facility.</p>
+                            </div>
+                            <div class="step-card" data-map-state="hexagons">
+                                <p>At the same time, <mark>51.4%</mark> of the settlements analyzed are <mark>over an hour’s walk</mark> from medical care. Most are <mark>small villages</mark> with relatively few residents. When a local FAP, clinic or community hospital closes, the nearest care may be in another settlement or the district center.</p>
+                            </div>
+                            <div class="step-card" data-map-state="top20">
+                                <p>These are the <mark>20 settlements</mark> with the longest calculated distance to the nearest medical facility.</p>
+                            </div>
+                            <div class="step-card" data-map-state="regions">
+                                <p>The <mark>Vitebsk Region</mark> stands out on the map.</p>
+                            </div>
+                            <div class="step-card" data-map-state="vitebskZoom">
+                                <p>There are <mark>381</mark> settlements located more than eight kilometers from the nearest medical facility in the Vitebsk Region. It’s <mark>more than in any other</mark> region of Belarus.</p>
+                                <p>
+                                    <mark class="teal-highlight">Of the 19 settlements</mark> in the country located more than 13 kilometers from the nearest medical facility, <mark class="teal-highlight">13 are in the Vitebsk Region</mark>.</p>
+                                </div>
+                                <div class="step-card" data-map-state="regionsOnly">
+                                    <p>Poor access to medical care overlaps with another process: rural settlements are losing residents, and some are disappearing from the map altogether. Natalia Babura, head of cartography at the state mapping agency Belgeodesy, attributed this decline to urbanization — “people moving from villages to cities.”</p>
+                                </div>
+                                <div class="step-card" data-map-state="age"><p>The age structure shows where distance may create an additional barrier. <mark class="age-highlight">Darker districts</mark> have a <mark class="age-highlight">higher share</mark> of residents aged 65 and older. In these areas, a journey of more than an hour on foot may be especially difficult, particularly where public transport is limited or unavailable.</p>
+                                </div>
+                                <div class="step-card" data-map-state="chartIntro">
+                                    <p>In some districts, poor access to medical care coincides with relatively low wages.</p>
+                                </div>
+                                <div class="step-card chart-card" data-map-state="chart">
+                                    <iframe class="flourish-embed-iframe" frameborder="0" sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" scrolling="no" src="https://flo.uri.sh/visualisation/29680233/embed" title="Interactive or visual content"></iframe>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="prose"><p>This alone does not establish a causal relationship between the two indicators. But residents of these districts may face several constraints at the same time.</p>
+                            <p>In Rossony District, the average monthly gross wage in 2025 was about 1,830 Belarusian rubles. At the same time, almost 23% of the district’s settlements were located more than eight kilometers from the nearest medical facility.</p>
+                            <p>In Gorodok District, the average wage over the same period was about 1,931 Belarusian rubles, while the share of such settlements reached 19%.</p><p>The maps show only physical access to healthcare. They cannot establish whether the nearest facility has the necessary specialist or whether a patient can get an appointment when care is needed.</p>
+                            <p>Residents of rural settlements also report shortages of medical workers. Experts from the Belarusian Medical Solidarity Foundation describe the staffing shortage as another barrier to accessing care.</p>
+                        <iframe src='https://flo.uri.sh/visualisation/29679565/embed' 
+  title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' 
+  sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox 
+  allow-top-navigation-by-user-activation'></iframe>
+                        </section>
+                        <section class="prose ending">
+                                    <p>According to Belstat, Belarus’s national statistics agency, the number of organizations classified as hospitals fell from 636 in 2016 to 548 in 2025 — a decline of 88, or 13.8%.</p>
+                                    <p>This figure cannot be treated as the number of hospitals that closed. The change may also reflect reorganizations or changes in the official status of medical institutions.</p>
+                                    <p>After the hospital in Velikiye Doltsy closed, one participant in the online discussion wrote that patients and the medical workers who had been employed there would now have to travel to the district center.</p>
+                                    <p>“And buses to some villages run four times a week, if you are lucky,” she added.</p>
+                                    <p>Another participant wrote: “It is painful and upsetting to see villages like these turn into isolated hamlets. Everything is closing. Where are people supposed to go — especially families with children?”</p>
+                                </section>
+                                <section class="methodology">
+                                    <h2>Methodology</h2>
+                                      <p>
+    This project combines data on settlements, roads, medical facilities, population,
+    age and wages to measure physical access to healthcare across Belarus.
+  </p>
+
+  <h3>Data and tools</h3>
+
+  <p>
+    Medical facility data was collected from
+    <a href="https://www.healthcare.by/" target="_blank" rel="noopener noreferrer">Healthcare.by</a>.
+    Settlement locations came from the
+    <a href="https://data.humdata.org/dataset/hotosm_blr_populated_places" target="_blank" rel="noopener noreferrer">HOTOSM Belarus Populated Places dataset</a>.
+    Roads and administrative boundaries came from
+    <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>.
+    Official demographic, wage and hospital statistics came from
+    <a href="https://www.belstat.gov.by/en/" target="_blank" rel="noopener noreferrer">Belstat</a>.
+  </p>
+
+  <p>
+    The data was cleaned and analyzed in Python using
+    <a href="https://geopandas.org/" target="_blank" rel="noopener noreferrer">GeoPandas</a>
+    and in
+    <a href="https://qgis.org/" target="_blank" rel="noopener noreferrer">QGIS</a>.
+    The interactive maps were built with
+    <a href="https://docs.mapbox.com/mapbox-gl-js/guides/" target="_blank" rel="noopener noreferrer">Mapbox GL JS</a>,
+    and the charts were created in
+    <a href="https://flourish.studio/" target="_blank" rel="noopener noreferrer">Flourish</a>.
+  </p>
+
+  <h3>How access was measured</h3>
+
+  <p>
+    Straight-line distance to the nearest medical facility was calculated with
+    <a href="https://geopandas.org/en/stable/docs/reference/api/geopandas.sjoin_nearest.html" target="_blank" rel="noopener noreferrer">GeoPandas</a>.
+    These distances were used for the 3, 8 and 13-kilometer comparisons.
+  </p>
+
+  <p>
+    Walking access was calculated separately in QGIS. Roads, settlements and medical
+    facilities were reprojected to EPSG:3035, and roads unsuitable for walking were removed.
+    A
+    <a href="https://docs.qgis.org/latest/en/docs/user_manual/processing_algs/qgis/networkanalysis.html" target="_blank" rel="noopener noreferrer">service-area analysis</a>
+    modeled one hour of walking at 4 km/h. Settlements inside the resulting areas were
+    classified as within one hour of medical care; those outside were classified as more
+    than one hour away.
+  </p>
+
+  <h3>Limitations</h3>
+
+  <ul>
+    <li>
+      The one-hour threshold was selected for this project, following the general approach
+      of the WHO-supported
+      <a href="https://www.who.int/tools/accessmod-geographic-access-to-health-care" target="_blank" rel="noopener noreferrer">AccessMod</a>
+      tool. It is not a universal WHO standard.
+    </li>
+    <li>
+      Straight-line distance is not the same as the actual distance by road.
+    </li>
+    <li>
+      The walking model assumes a speed of 4 km/h and depends on the completeness of the
+      mapped road network. It does not account for weather, road condition or individual mobility.
+    </li>
+    <li>
+      A facility appearing in the data does not show whether it is open, fully staffed or
+      able to provide the treatment a patient needs.
+    </li>
+    <li>
+      Population totals include only settlements for which population data was available
+      in the working dataset.
+    </li>
+  </ul>
+  <p class="methodology-link">
+  Read the full methodology and data-processing notes on
+  <a href="YOUR_GITHUB_REPOSITORY_URL" target="_blank" rel="noopener noreferrer">GitHub</a>.
+</p>
+                                </section>
+                            </article>
+                        </main>
+                        <script src="https://api.mapbox.com/mapbox-gl-js/v3.25.0/mapbox-gl.js"></script>
+                        <script defer="" src="./map.js"></script>
+                    </body>
+                    </html>
