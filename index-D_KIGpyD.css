@@ -119,3 +119,13 @@
   font-size: 10px;
   color: #555;
 }
+
+p a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+p a:hover {
+  opacity: 0.65;
+}
