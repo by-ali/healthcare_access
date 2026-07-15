@@ -232,3 +232,16 @@ Through this process, I became more familiar with JavaScript and with integratin
 - I would spend more time exploring the data and testing different calculations in QGIS.
 - I would look for more local residents, experts and additional context, and spend more time developing the written story.
 - My Jupyter notebooks became very messy during the analysis. I would like to develop a cleaner workflow so that I do not need to spend hours reorganizing them at the end.
+
+## Project structure
+
+- `flourish/` — data used in the Flourish charts.
+- `mapbox/` — GeoJSON layers and icons used in the interactive map.
+- `notebooks/`
+  - `scrape_healthcare_by.ipynb` — scrapes, cleans and geocodes medical facilities.
+  - `bel_settlements_cleaning.ipynb` — cleans the HOTOSM settlement data.
+  - `accessibility_analysis.ipynb` — calculates accessibility statistics and prepares map datasets.
+  - `belstat/` — original population and earnings data from Belstat.
+  - `map_data/` — original geographic source files.
+  - `output_data/` — datasets produced by the notebooks and QGIS.
+  - `gathered_yandex_coordinates.csv` — saved Yandex geocoding results.
