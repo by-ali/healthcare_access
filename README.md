@@ -2,6 +2,8 @@
 
 *In Belarus, 428,000 people live in settlements located more than an hour’s walk from the nearest medical facility.*
 
+Read the full story here: [The Long Road to a Doctor](https://by-ali.github.io/healthcare_access/)
+
 ## What I aimed to accomplish
 
 I aimed to measure how far people across Belarus live from the nearest medical facility, identify the areas where access is most limited, and show how these gaps are concentrated in small rural communities and overlap with older populations and lower average wages.
