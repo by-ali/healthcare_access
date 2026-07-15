@@ -173,7 +173,7 @@
           'med_for_20',
           'top_20',
           'vitebsk_borders',
-          'region_borders',
+          'region_borders'
         ];
       } else if (state === 'hexagons' || state === 'regionsOnly') {
         visibleLayers = ['hexagons'];
