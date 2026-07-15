@@ -81,44 +81,41 @@
 }
 
 #hex-legend {
-  position: absolute;
-  left: 24px;
+  position: fixed;
+  right: 24px;
   bottom: 24px;
-  width: 250px;
+  width: 240px;
   padding: 12px 14px;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   font-family: Arial, sans-serif;
-  z-index: 10;
-
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
+  z-index: 20;
+  pointer-events: none;
 }
 
-#hex-legend.is-visible {
-  opacity: 1;
-  visibility: visible;
+#hex-legend[hidden] {
+  display: none;
 }
 
-.legend-title {
+.hex-legend-title {
   margin-bottom: 8px;
   font-size: 12px;
-  line-height: 1.3;
+  line-height: 1.35;
   font-weight: 600;
 }
 
-.legend-colors {
-  display: flex;
+.hex-legend-scale {
   height: 12px;
+  background: linear-gradient(
+    to right,
+    #f3e7df,
+    #a95f50
+  );
 }
 
-.legend-colors span {
-  flex: 1;
-}
-
-.legend-labels {
+.hex-legend-labels {
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
-  font-size: 11px;
+  font-size: 10px;
+  color: #555;
 }

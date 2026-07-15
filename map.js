@@ -163,13 +163,7 @@
     visibleLayers = ['settlements_over60min'];
   } else if (state === 'top20') {
     visibleLayers = ['hexagons', 'top_20'];
-      } 
-      const hexLegend = document.getElementById('hex-legend');
-
-if (hexLegend) {
-  hexLegend.hidden = !visibleLayers.includes('hexagons');
-}
-      else if (state === 'regions' || state === 'vitebskZoom') {
+      } else if (state === 'regions' || state === 'vitebskZoom') {
         visibleLayers = [
           'hexagons',
           'top_20_connections',
@@ -186,7 +180,15 @@ if (hexLegend) {
       } else {
         visibleLayers = [];
       }
+const hexLegend = document.getElementById('hex-legend');
 
+if (hexLegend) {
+  const showHexLegend =
+    Array.isArray(visibleLayers) &&
+    visibleLayers.includes('hexagons');
+
+  hexLegend.hidden = !showHexLegend;
+}
       if (map.getLayer('hexagons')) {
         map.setPaintProperty('hexagons', 'fill-opacity-transition', {
           duration: 0,
