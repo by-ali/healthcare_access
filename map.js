@@ -163,7 +163,13 @@
     visibleLayers = ['settlements_over60min'];
   } else if (state === 'top20') {
     visibleLayers = ['hexagons', 'top_20'];
-      } else if (state === 'regions' || state === 'vitebskZoom') {
+      } 
+      const hexLegend = document.getElementById('hex-legend');
+
+if (hexLegend) {
+  hexLegend.hidden = !visibleLayers.includes('hexagons');
+}
+      else if (state === 'regions' || state === 'vitebskZoom') {
         visibleLayers = [
           'hexagons',
           'top_20_connections',
