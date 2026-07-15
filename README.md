@@ -58,7 +58,7 @@ I re-geocoded about 2,700 facilities in random batches of 500. The request count
 
 ### 4. Administrative boundaries
 
-I downloaded OpenStreetMap administrative boundaries for the regions and districts of Belarus.
+I downloaded administrative boundaries for the regions and districts of Belarus from the [Database of Global Administrative Areas (GADM)](https://gadm.org/download_country.html).
 
 Using GeoPandas, I assigned each medical facility to its corresponding district and region.
 
