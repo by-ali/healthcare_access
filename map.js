@@ -11,7 +11,6 @@
   const STORY_LAYERS = [
     'settlements_over60min',
     'vitebsk',
-    'vitebsk_borders'
     '6c5a137fd7e58c06690a',
     'top_20_connections',
     'top_20_connections_underneath',
@@ -173,7 +172,6 @@
           'med_for_20',
           'top_20',
           'region_borders',
-          
         ];
       } else if (state === 'hexagons' || state === 'regionsOnly') {
         visibleLayers = ['hexagons'];
